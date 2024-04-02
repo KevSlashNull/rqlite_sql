@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/rqlite/sql"
+	sql "github.com/KevSlashNull/rqlite_sql"
 )
 
 func TestScanner_Scan(t *testing.T) {

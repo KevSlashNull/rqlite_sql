@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
+	sql "github.com/KevSlashNull/rqlite_sql"
 	"github.com/go-test/deep"
-	"github.com/rqlite/sql"
 )
 
 func TestParser_ParseStatement(t *testing.T) {

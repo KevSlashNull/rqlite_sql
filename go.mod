@@ -1,4 +1,4 @@
-module github.com/rqlite/sql
+module github.com/KevSlashNull/rqlite_sql
 
 go 1.17
 
