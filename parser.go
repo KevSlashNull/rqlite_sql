@@ -612,7 +612,7 @@ func (p *Parser) parseDefaultConstraint(constraintPos Pos, name *Ident) (_ *Defa
 	// SQLite docs say that it shouldn't if DQS is disabled. For that reason,
 	// we are including it only on the DEFAULT value parsing.
 	//
-	// See: https://github.com/rqlite/sql/issues/18
+	// See: https://github.com/KevSlashNull/rqlite_sql/issues/18
 	if p.peek() == QIDENT {
 		pos, _, lit := p.scan()
 		cons.Expr = &StringLit{ValuePos: pos, Value: lit}
@@ -3129,7 +3129,7 @@ func isLiteralToken(tok Token) bool {
 }
 
 func isTypeName(s string) bool {
-	switch s {
+	switch strings.ToUpper(s) {
 	case "BIGINT", "BLOB", "BOOLEAN", "CHARACTER", "CLOB", "DATE", "DATETIME",
 		"DECIMAL", "DOUBLE", "FLOAT", "INT", "INTEGER", "MEDIUMINT", "NCHAR",
 		"NUMERIC", "NVARCHAR", "REAL", "SMALLINT", "TEXT", "TINYINT", "VARCHAR":
