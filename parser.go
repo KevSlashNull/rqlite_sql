@@ -3130,7 +3130,7 @@ func isLiteralToken(tok Token) bool {
 
 func isTypeName(s string) bool {
 	switch strings.ToUpper(s) {
-	case "BIGINT", "BLOB", "BOOLEAN", "CHARACTER", "CLOB", "DATE", "DATETIME",
+	case "BIGINT", "BLOB", "BOOLEAN", "CHARACTER", "CLOB", "DATE", "DATETIME", "TIMESTAMP",
 		"DECIMAL", "DOUBLE", "FLOAT", "INT", "INTEGER", "MEDIUMINT", "NCHAR",
 		"NUMERIC", "NVARCHAR", "REAL", "SMALLINT", "TEXT", "TINYINT", "VARCHAR":
 		return true
